@@ -1,7 +1,10 @@
 import express from 'express';
+import { getRandomQuote } from 'inspirational-quotes';
 import fetch from 'node-fetch';
 
+const Quote = (await import('inspirational-quotes')).default;
 const app = express();
+
 let isFeatured = [];
 let featured = [];
 let galleryImg = [];
@@ -106,6 +109,10 @@ app.get('/sounds', async (req, res) => {
 
     checkSounds(sounds);
     renderSounds(res, 'sounds', page);
+});
+
+app.get('/inspiration', async (req, res) => {
+    res.render('inspiration', {text: Quote.getQuote().text, author: Quote.getQuote().author});
 });
 
 app.listen(3000, () => {

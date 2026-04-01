@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+
+    <body>
+        <%- include('partials/nav')%>
+
+            <div class="container py-4">
+                <div class="card shadow-sm mx-auto" style="max-width: 800px;">
+                    <img src="<%=artworkImg[0]%>" class="card-img-top" alt="artwork">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title">
+                            <%=artworkTitle[0]%>
+                        </h3>
+
+                        <p class="text-muted">
+                            <strong>By:</strong>
+                            <%=artworkArtist[0]%>
+                        </p>
+
+                        <p class="card-text">
+                           <%=artworkDescription[0]%>
+                        </p>
+
+                        <p>
+                            <strong>Place of origin: </strong>
+                            <%=artworkOrigin[0]%>
+                        </p>
+                    </div>
+                </div>
+                <div class="card shadow-sm mx-auto" style="max-width: 800px;">
+                    <img src="<%=artworkImg[1]%>" class="card-img-top" alt="artwork">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title">
+                            <%=artworkTitle[1]%>
+                        </h3>
+
+                        <p class="text-muted">
+                            <strong>By:</strong>
+                            <%=artworkArtist[1]%>
+                        </p>
+
+                        <p class="card-text">
+                           <%=artworkDescription[1]%>
+                        </p>
+
+                        <p>
+                            <strong>Place of origin: </strong>
+                            <%=artworkOrigin[1]%>
+                        </p>
+                    </div>
+                </div>
+                <div class="card shadow-sm mx-auto" style="max-width: 800px;">
+                    <img src="<%=artworkImg[2]%>" class="card-img-top" alt="artwork">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title">
+                            <%=artworkTitle[2]%>
+                        </h3>
+
+                        <p class="text-muted">
+                            <strong>By:</strong>
+                            <%=artworkArtist[2]%>
+                        </p>
+
+                        <p class="card-text">
+                           <%=artworkDescription[2]%>
+                        </p>
+
+                        <p>
+                            <strong>Place of origin: </strong>
+                            <%=artworkOrigin[2]%>
+                        </p>
+                    </div>
+                </div>
+                <div class="card shadow-sm mx-auto" style="max-width: 800px;">
+                    <img src="<%=artworkImg[3]%>" class="card-img-top" alt="artwork">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title">
+                            <%=artworkTitle[3]%>
+                        </h3>
+
+                        <p class="text-muted">
+                            <strong>By:</strong>
+                            <%=artworkArtist[3]%>
+                        </p>
+
+                        <p class="card-text">
+                           <%=artworkDescription[3]%>
+                        </p>
+
+                        <p>
+                            <strong>Place of origin: </strong>
+                            <%=artworkOrigin[3]%>
+                        </p>
+                    </div>
+                </div>
+                <div class="card shadow-sm mx-auto" style="max-width: 800px;">
+                    <img src="<%=artworkImg[4]%>" class="card-img-top" alt="artwork">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title">
+                            <%=artworkTitle[4]%>
+                        </h3>
+
+                        <p class="text-muted">
+                            <strong>By:</strong>
+                            <%=artworkArtist[4]%>
+                        </p>
+
+                        <p class="card-text">
+                           <%=artworkDescription[4]%>
+                        </p>
+
+                        <p>
+                            <strong>Place of origin: </strong>
+                            <%=artworkOrigin[4]%>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('partials/paginationNav')%>
+
+            <%- include('partials/footer')%>
+    </body>
+
+</html>

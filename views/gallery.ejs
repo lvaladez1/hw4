@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+
+    <body>
+        <%- include('partials/nav')%>
+
+            <div class="container py-4">
+                <div class="card shadow-sm mx-auto" style="max-width: 800px;">
+                    <img src="<%= galleryImg[0] %>" class="card-img-top" alt="artwork">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title">
+                            <%= exibitionsInfo.data[0].title %>
+                        </h3>
+
+                        <p class="text-muted">
+                            <%= featured[0] %>
+                        </p>
+
+                        <p class="card-text">
+                            <%= galleryDescription[0] %>
+                        </p>
+
+                        <p>
+                            <strong>Featured in museum:</strong>
+                            <span class="<%= isFeatured[0] === 'Yes' ? 'text-success' : 'text-danger' %>">
+                                <%= isFeatured[0] %>
+                            </span>
+                        </p>
+
+                        <a href="<%= galleryWebURL[0] %>" class="btn btn-outline-primary" target="_blank">
+                            View Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container py-4">
+                <div class="card shadow-sm mx-auto" style="max-width: 800px;">
+
+                    <img src="<%= galleryImg[1] %>" class="card-img-top" alt="artwork">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title">
+                            <%= exibitionsInfo.data[1].title %>
+                        </h3>
+
+                        <p class="text-muted">
+                            <%= featured[1] %>
+                        </p>
+
+                        <p class="card-text">
+                            <%= galleryDescription[1] %>
+                        </p>
+
+                        <p>
+                            <strong>Featured in museum:</strong>
+                            <span class="<%= isFeatured[1] === 'Yes' ? 'text-success' : 'text-danger' %>">
+                                <%= isFeatured[1] %>
+                            </span>
+                        </p>
+
+                        <a href="<%= galleryWebURL[1] %>" class="btn btn-outline-primary" target="_blank">
+                            View Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('partials/paginationNav')%>
+
+            <%- include('partials/footer')%>
+    </body>
+
+</html>

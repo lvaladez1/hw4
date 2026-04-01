@@ -1,0 +1,11 @@
+<div class="d-flex justify-content-between w-100 px-5">
+    <a href="<%= baseRoute %>?page=<%= currentPage > 1 ? currentPage - 1 : 1 %>"
+       class="btn btn-light btn-lg text-primary-emphasis text-decoration-none">
+        Previous
+    </a>
+
+    <a href="<%= baseRoute %>?page=<%= currentPage + 1 %>"
+       class="btn btn-light btn-lg text-primary-emphasis text-decoration-none">
+        Next
+    </a>
+</div>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+
+<body>
+<%- include('partials/nav') %>
+
+<div class="container py-5">
+    <div class="row align-items-center g-4">
+        <div class="col-md-6">
+            <h1 class="display-4 fw-bold">Welcome to the Art & Museum Explorer</h1>
+            <p class="lead mt-3">
+                Discover exhibitions, featured collections, and museum highlights from around the world.
+            </p>
+            <p>
+                Browse current exhibits, learn about special events, and explore beautiful works of art through our collection pages.
+            </p>
+            <a href="/gallery" class="btn btn-dark btn-lg mt-3">
+                Explore Exhibitions
+            </a>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <img 
+                src="/img/museum-home.jpg" 
+                alt="Museum gallery"
+                class="img-fluid rounded shadow"
+            >
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row text-center g-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Current Exhibitions</h3>
+                    <p class="card-text">
+                        View museum exhibitions and see featured information, descriptions, and images.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Featured Works</h3>
+                    <p class="card-text">
+                        Discover highlighted exhibitions and learn when they were featured in the museum.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Museum Experience</h3>
+                    <p class="card-text">
+                        Enjoy a simple digital experience inspired by museum collections and exhibition archives.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5 text-center">
+    <h2 class="mb-3">Start Exploring Art Today</h2>
+    <p class="mb-4">
+        Step into the world of creativity, history, and culture through online museum exhibitions.
+    </p>
+    <a href="/gallery" class="btn btn-outline-dark btn-lg">
+        View Gallery
+    </a>
+</div>
+
+<%- include('partials/footer') %>
+</body>
+</html>
